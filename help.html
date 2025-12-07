@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Help Center - Digital Literacy Camp</title>
+
+  <!-- Bootstrap CSS -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+
+  <style>
+    body{
+      background: linear-gradient(135deg, #e3f2fd, #f3e5f5);
+      font-family: Arial, sans-serif;
+    }
+    .hero{
+      background: linear-gradient(135deg, #007bff, #6a5acd);
+      color:white;
+      text-align:center;
+      padding:50px 20px;
+      border-radius:0 0 30px 30px;
+      box-shadow:0 8px 20px rgba(0,0,0,0.15);
+      margin-bottom:25px;
+    }
+    .hero h1{
+      font-size:2.1rem;
+      font-weight:bold;
+    }
+    .hero p{
+      margin-top:8px;
+      font-size:1rem;
+    }
+    .help-card{
+      background:white;
+      border-radius:16px;
+      padding:20px;
+      box-shadow:0 4px 16px rgba(0,0,0,.08);
+      margin-bottom:20px;
+      transition:transform .2s, box-shadow .2s;
+      border:2px solid transparent;
+    }
+    .help-card:hover{
+      transform:translateY(-4px);
+      box-shadow:0 8px 22px rgba(0,0,0,.12);
+    }
+    .help-card.highlighted{
+      border-color:#ffb300;
+      box-shadow:0 10px 25px rgba(255,179,0,0.3);
+    }
+    .icon{
+      font-size:26px;
+      margin-right:6px;
+    }
+    .helper-box{
+      background:rgba(255,255,255,0.9);
+      border-radius:16px;
+      padding:16px;
+      box-shadow:0 4px 12px rgba(0,0,0,.08);
+      margin-bottom:20px;
+    }
+    .helper-box button{
+      border-radius:20px;
+      margin:4px;
+    }
+    .chip{
+      display:inline-block;
+      padding:4px 10px;
+      border-radius:12px;
+      background:#e3f2fd;
+      margin-right:6px;
+      margin-top:4px;
+      font-size:0.85rem;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand font-weight-bold" href="index.html">
+    Digital Literacy Camp
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="lessons.html">Lessons</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="digital-payments.html">Digital Payments</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="cyber-safety.html">Cyber Safety</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="govt-services.html">Govt Services</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="help.html">Help Center</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<div class="hero">
+  <h1>Help Center 💬</h1>
+  <p>If you are confused, worried, or stuck in any lesson, please ask. You are not alone. 💙</p>
+</div>
+
+
+<div class="container mt-2">
+
+  <!-- WHO SHOULD I ASK? helper -->
+  <div class="helper-box text-center">
+    <h5 class="mb-2">Who should I talk to? 🤔</h5>
+    <p class="mb-3">Choose your situation and we’ll highlight the best person to help you.</p>
+
+    <div class="mb-2">
+      <button class="btn btn-outline-primary btn-sm"
+              onclick="highlightRole('teacher')">
+        I didn’t understand a lesson
+      </button>
+      <button class="btn btn-outline-success btn-sm"
+              onclick="highlightRole('parent')">
+        I feel unsafe or scared online
+      </button>
+      <button class="btn btn-outline-info btn-sm"
+              onclick="highlightRole('senior')">
+        I need help using computer / mobile
+      </button>
+      <button class="btn btn-outline-secondary btn-sm"
+              onclick="clearHighlight()">
+        Clear Highlight
+      </button>
+    </div>
+
+    <small class="text-muted">
+      Tip: It’s always okay to ask more than one person you trust.
+    </small>
+  </div>
+
+
+  <div class="row">
+
+    <!-- teachers -->
+    <div class="col-md-6">
+      <div class="help-card" id="card-teacher">
+        <h3><span class="icon">👩‍🏫</span>Teachers</h3>
+        <p>
+          Your teacher is the <strong>first person</strong> to ask when:
+        </p>
+        <ul>
+          <li>you didn’t understand a topic,</li>
+          <li>you forgot some steps,</li>
+          <li>you want extra practice.</li>
+        </ul>
+        <p>
+          They can explain slowly again, show examples on board,
+          or let you practice in the computer lab.
+        </p>
+        <div>
+          <span class="chip">Computer basics</span>
+          <span class="chip">Internet lessons</span>
+          <span class="chip">Quiz doubts</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- parents -->
+    <div class="col-md-6">
+      <div class="help-card" id="card-parent">
+        <h3><span class="icon">👨‍👩‍👧</span>Parents / Family</h3>
+        <p>
+          If something online makes you <strong>worried</strong>, <strong>scared</strong>,
+          or <strong>uncomfortable</strong>, please tell your parents or any elder at home.
+        </p>
+        <ul>
+          <li>Someone unknown is messaging you</li>
+          <li>Strange links or photos are coming</li>
+          <li>You saw something that doesn’t feel right</li>
+        </ul>
+        <p>
+          They can decide what to do, and keep you safe.
+        </p>
+        <div>
+          <span class="chip">Online safety</span>
+          <span class="chip">Screen time rules</span>
+          <span class="chip">Reporting problems</span>
+        </div>
+      </div>
+    </div>
+
+  </div> <!-- row 1 -->
+
+  <div class="row">
+
+    <!-- seniors -->
+    <div class="col-md-6">
+      <div class="help-card" id="card-senior">
+        <h3><span class="icon">🧑‍💻</span>Senior Students / Volunteers</h3>
+        <p>
+          Seniors and camp volunteers can help you with <strong>hands-on work</strong>:
+        </p>
+        <ul>
+          <li>how to hold the mouse and click,</li>
+          <li>how to type neatly on keyboard,</li>
+          <li>how to search on Google or open government websites.</li>
+        </ul>
+        <p>
+          They are like friendly big brothers and sisters in the lab. 🙂
+        </p>
+        <div>
+          <span class="chip">Practice help</span>
+          <span class="chip">Government websites</span>
+          <span class="chip">DigiLocker / NSP etc.</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- safety rule -->
+    <div class="col-md-6">
+      <div class="help-card">
+        <h3><span class="icon">🛡</span>If something looks wrong…</h3>
+        <p>
+          <strong>Do NOT reply. Do NOT hide it.</strong><br>
+          Immediately tell:
+        </p>
+        <ul>
+          <li>Your class teacher</li>
+          <li>Your parent or guardian</li>
+          <li>Your school headmaster / in-charge</li>
+        </ul>
+        <p>
+          Never share with strangers:
+          <strong>phone number, home address, school name,
+          photos, age, OTP, UPI PIN</strong>.
+        </p>
+      </div>
+    </div>
+
+  </div> <!-- row 2 -->
+
+  <!-- emergency -->
+  <div class="help-card">
+    <h3><span class="icon">☎</span>Emergency Help (India)</h3>
+    <p>
+      <strong>Cyber Crime Helpline:</strong> 1930  
+      <br>
+      If something very serious happens online (money fraud, threats, blackmail etc.),
+      ask an elder to call <strong>1930</strong> or visit the official cyber crime portal.
+    </p>
+    <small class="text-muted">
+      Kids should not handle this alone – always involve a trusted adult.
+    </small>
+  </div>
+
+
+  <div class="text-center my-3">
+    <a href="index.html" class="btn btn-dark btn-lg">⬅ Back to Home</a>
+  </div>
+
+</div> <!-- container -->
+
+
+<footer class="bg-dark text-white text-center mt-4">
+  <div class="container">
+    <small>&copy; 2025 Digital Literacy Camp | Young Learners</small>
+  </div>
+</footer>
+
+
+<!-- JS: jQuery, Popper, Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+<!-- Small script for interactive helper -->
+<script>
+  function clearHighlight(){
+    ['card-teacher','card-parent','card-senior'].forEach(id=>{
+      const el = document.getElementById(id);
+      if(el){ el.classList.remove('highlighted'); }
+    });
+  }
+
+  function highlightRole(role){
+    clearHighlight();
+    const map = {
+      teacher: 'card-teacher',
+      parent: 'card-parent',
+      senior: 'card-senior'
+    };
+    const id = map[role];
+    const el = document.getElementById(id);
+    if(el){
+      el.classList.add('highlighted');
+      el.scrollIntoView({behavior:'smooth', block:'center'});
+    }
+  }
+</script>
+
+</body>
+</html>

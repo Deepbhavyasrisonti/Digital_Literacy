@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Computer Basics - Digital Literacy Camp</title>
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body{
+      background:#f5f7ff;
+      font-family:Arial, sans-serif;
+    }
+    .hero{
+      background:#007bff;
+      color:white;
+      text-align:center;
+      padding:40px 15px;
+    }
+    .hero h1{
+      font-size:2rem;
+      font-weight:bold;
+    }
+    .section-card{
+      background:white;
+      border-radius:12px;
+      padding:20px;
+      margin-top:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .emoji{
+      font-size:26px;
+      margin-right:6px;
+    }
+    .part-name{
+      font-weight:bold;
+    }
+    .quiz-q{
+      font-weight:bold;
+      margin-top:10px;
+    }
+    .badge-click{
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand font-weight-bold" href="index.html">
+    Digital Literacy Camp
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item active"><a class="nav-link" href="lessons.html">Lessons</a></li>
+      <li class="nav-item"><a class="nav-link" href="digital-payments.html">Digital Payments</a></li>
+      <li class="nav-item"><a class="nav-link" href="cyber-safety.html">Cyber Safety</a></li>
+      <li class="nav-item"><a class="nav-link" href="govt-services.html">Govt Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Computer Basics 💻</h1>
+  <p>Let’s meet the main parts of a computer in a fun way!</p>
+</div>
+
+<div class="container">
+
+  <!-- what is a computer -->
+  <div class="section-card">
+    <h3><span class="emoji">💡</span>What is a Computer?</h3>
+    <p>
+      A computer is a machine that can <strong>store</strong> and
+      <strong>process</strong> information.  
+      We use it to type, draw, watch videos, play games and learn new things.
+    </p>
+  </div>
+
+  <!-- parts -->
+  <div class="section-card">
+    <h3><span class="emoji">🧩</span>Main Parts of a Computer</h3>
+
+    <ul>
+      <li><span class="part-name">Monitor 🖥️</span> – looks like a TV, shows pictures and text.</li>
+      <li><span class="part-name">Keyboard ⌨️</span> – used to type letters, numbers and symbols.</li>
+      <li><span class="part-name">Mouse 🐭</span> – used to point, click and open things.</li>
+      <li><span class="part-name">CPU 🧠</span> – the “brain” of the computer which does all the work.</li>
+      <li><span class="part-name">Speakers 🔊</span> – used to hear sound.</li>
+    </ul>
+  </div>
+
+  <!-- how to start/shut down -->
+  <div class="section-card">
+    <h3><span class="emoji">▶️</span>How to Use a Computer Safely</h3>
+    <ol>
+      <li>Press the power button on the CPU or laptop.</li>
+      <li>Wait for Windows screen to appear.</li>
+      <li>Use mouse to move pointer and click icons.</li>
+      <li>After work, click <strong>Start → Power → Shut down</strong>.</li>
+      <li>Do not directly switch off power without shutdown.</li>
+    </ol>
+  </div>
+
+  <!-- FUN FACT -->
+  <div class="section-card">
+    <h3><span class="emoji">🎉</span>Fun Facts</h3>
+    <ul>
+      <li>The first computer was as big as a room!</li>
+      <li>Today, your mobile phone is also a small computer.</li>
+      <li>The word “computer” comes from “compute” which means to calculate.</li>
+    </ul>
+  </div>
+
+  <!-- quiz -->
+  <div class="section-card">
+    <h3><span class="emoji">🎯</span>Tiny Quiz (Click to see answers)</h3>
+
+    <p class="quiz-q">
+      1. Which part is called the “brain” of the computer?
+      <span class="badge badge-info badge-click" onclick="showCBAns(1)">Show Answer</span>
+    </p>
+    <p id="cb_ans1" style="display:none;">CPU is the brain of the computer.</p>
+
+    <p class="quiz-q">
+      2. What device do we use to type letters?
+      <span class="badge badge-info badge-click" onclick="showCBAns(2)">Show Answer</span>
+    </p>
+    <p id="cb_ans2" style="display:none;">We use the keyboard to type.</p>
+
+    <p class="quiz-q">
+      3. What should we do before switching off power?
+      <span class="badge badge-info badge-click" onclick="showCBAns(3)">Show Answer</span>
+    </p>
+    <p id="cb_ans3" style="display:none;">We must shut down the computer properly.</p>
+  </div>
+
+  <!-- back -->
+  <div class="text-center my-3">
+    <a href="lessons.html" class="btn btn-dark btn-lg">⬅ Back to Lessons</a>
+  </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center mt-4">
+  <div class="container">
+    <small>&copy; 2025 Digital Literacy Camp | Young Learners</small>
+  </div>
+</footer>
+
+<script>
+  function showCBAns(n){
+    const el = document.getElementById("cb_ans"+n);
+    el.style.display = (el.style.display === "none") ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>

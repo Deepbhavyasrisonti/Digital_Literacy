@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Internet Basics - Digital Literacy Camp</title>
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body{
+      background:#eef8ff;
+      font-family:Arial, sans-serif;
+    }
+    .hero{
+      background:#17a2b8;
+      color:white;
+      text-align:center;
+      padding:40px 15px;
+    }
+    .hero h1{
+      font-size:2rem;
+      font-weight:bold;
+    }
+    .section-card{
+      background:white;
+      border-radius:12px;
+      padding:20px;
+      margin-top:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .emoji{
+      font-size:26px;
+      margin-right:6px;
+    }
+    .good{
+      color:#2e7d32;
+    }
+    .bad{
+      color:#c62828;
+    }
+    .quiz-q{
+      font-weight:bold;
+      margin-top:10px;
+    }
+    .badge-click{
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand font-weight-bold" href="index.html">
+    Digital Literacy Camp
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+      <li class="nav-item active"><a class="nav-link" href="lessons.html">Lessons</a></li>
+      <li class="nav-item"><a class="nav-link" href="digital-payments.html">Digital Payments</a></li>
+      <li class="nav-item"><a class="nav-link" href="cyber-safety.html">Cyber Safety</a></li>
+      <li class="nav-item"><a class="nav-link" href="govt-services.html">Govt Services</a></li>
+      <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Internet Basics 🌐</h1>
+  <p>Let’s see how the internet helps us learn, play and explore safely!</p>
+</div>
+
+<div class="container">
+
+  <!-- what is internet -->
+  <div class="section-card">
+    <h3><span class="emoji">💡</span>What is the Internet?</h3>
+    <p>
+      The internet is a huge network of computers all over the world.
+      It allows us to open websites, watch videos, send emails and chat with people.
+      You can think of it as a <strong>giant library + post office + TV + playground</strong> combined!
+    </p>
+  </div>
+
+  <!-- good uses -->
+  <div class="section-card">
+    <h3><span class="emoji good">✅</span>Good Uses of the Internet</h3>
+    <ul>
+      <li class="good">Watching educational videos (science, maths, stories).</li>
+      <li class="good">Using Google to search answers for homework.</li>
+      <li class="good">Attending online classes from school.</li>
+      <li class="good">Using email to send projects to teachers.</li>
+    </ul>
+  </div>
+
+  <!-- be careful -->
+  <div class="section-card">
+    <h3><span class="emoji bad">⚠️</span>Be Careful With</h3>
+    <ul>
+      <li class="bad">Fake news and wrong information on random websites.</li>
+      <li class="bad">Unknown people asking to chat or video call.</li>
+      <li class="bad">Websites that ask for your password or personal details.</li>
+      <li class="bad">Spending too much time on games instead of study.</li>
+    </ul>
+  </div>
+
+  <!-- browser basics -->
+  <div class="section-card">
+    <h3><span class="emoji">🧭</span>How to Open a Website (Step-by-step)</h3>
+    <ol>
+      <li>Open a browser like <strong>Chrome</strong> or <strong>Edge</strong>.</li>
+      <li>Click on the address bar at the top.</li>
+      <li>Type the website name (for example: <code>www.nationalgeographic.com</code>).</li>
+      <li>Press <strong>Enter</strong>.</li>
+      <li>Explore the page by scrolling up and down.</li>
+    </ol>
+  </div>
+
+  <!-- fun facts -->
+  <div class="section-card">
+    <h3><span class="emoji">🎉</span>Fun Facts</h3>
+    <ul>
+      <li>The first website was created in 1991.</li>
+      <li>Every second, thousands of new photos are uploaded to the internet.</li>
+      <li>There are billions of websites, but we use only a few daily.</li>
+    </ul>
+  </div>
+
+  <!-- quiz -->
+  <div class="section-card">
+    <h3><span class="emoji">🎯</span>Quick Quiz (Click to see answers)</h3>
+
+    <p class="quiz-q">
+      1. Is everything on the internet true?
+      <span class="badge badge-info badge-click" onclick="showIBAns(1)">Show Answer</span>
+    </p>
+    <p id="ib_ans1" style="display:none;">No. Some information can be wrong or fake.</p>
+
+    <p class="quiz-q">
+      2. What should you do if a website asks for your password?
+      <span class="badge badge-info badge-click" onclick="showIBAns(2)">Show Answer</span>
+    </p>
+    <p id="ib_ans2" style="display:none;">Close it and do not type your password.</p>
+
+    <p class="quiz-q">
+      3. Name one good use of the internet for students.
+      <span class="badge badge-info badge-click" onclick="showIBAns(3)">Show Answer</span>
+    </p>
+    <p id="ib_ans3" style="display:none;">Example: watching educational videos / attending online class / searching homework answers.</p>
+  </div>
+
+  <!-- back -->
+  <div class="text-center my-3">
+    <a href="lessons.html" class="btn btn-dark btn-lg">⬅ Back to Lessons</a>
+  </div>
+
+</div>
+
+<footer class="bg-dark text-white text-center mt-4">
+  <div class="container">
+    <small>&copy; 2025 Digital Literacy Camp | Young Learners</small>
+  </div>
+</footer>
+
+<script>
+  function showIBAns(n){
+    const el = document.getElementById("ib_ans"+n);
+    el.style.display = (el.style.display === "none") ? "block" : "none";
+  }
+</script>
+
+</body>
+</html>

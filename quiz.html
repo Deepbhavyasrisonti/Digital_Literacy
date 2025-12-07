@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - Digital Literacy Camp</title>
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body{
+      background:#f5f7ff;
+      font-family:Arial, sans-serif;
+    }
+    .hero{
+      background:#20c997;
+      color:white;
+      text-align:center;
+      padding:40px 15px;
+    }
+    .hero h1{
+      font-size:2rem;
+      font-weight:bold;
+    }
+    .quiz-card{
+      background:white;
+      border-radius:12px;
+      padding:20px;
+      margin-top:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+    }
+    .question-block{
+      margin-bottom:18px;
+      padding-bottom:10px;
+      border-bottom:1px dashed #ddd;
+    }
+    .question-block:last-child{
+      border-bottom:none;
+    }
+    .option-label{
+      display:block;
+      margin-bottom:4px;
+      cursor:pointer;
+    }
+    #result-box{
+      font-weight:bold;
+      font-size:1.2rem;
+      margin-top:15px;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand font-weight-bold" href="index.html">
+    Digital Literacy Camp
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="lessons.html">Lessons</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="digital-payments.html">Digital Payments</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="cyber-safety.html">Cyber Safety</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="govt-services.html">Govt Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Quiz Time 🎯</h1>
+  <p>Answer these 10 questions to test what you learned!</p>
+</div>
+
+
+<div class="container">
+  <div class="quiz-card">
+    <form id="quizForm">
+
+      <!-- Q1 -->
+      <div class="question-block">
+        <p><strong>1.</strong> Which part of the computer is called the “brain”?</p>
+        <label class="option-label">
+          <input type="radio" name="q1" value="CPU"> CPU
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q1" value="Monitor"> Monitor
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q1" value="Mouse"> Mouse
+        </label>
+      </div>
+
+      <!-- Q2 -->
+      <div class="question-block">
+        <p><strong>2.</strong> What do we use to type letters on the computer?</p>
+        <label class="option-label">
+          <input type="radio" name="q2" value="Keyboard"> Keyboard
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q2" value="Speaker"> Speaker
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q2" value="CPU"> CPU
+        </label>
+      </div>
+
+      <!-- Q3 -->
+      <div class="question-block">
+        <p><strong>3.</strong> Which one is a good use of the internet?</p>
+        <label class="option-label">
+          <input type="radio" name="q3" value="Homework"> Searching homework answers
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q3" value="Fight"> Fighting with strangers online
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q3" value="ShareSecrets"> Sharing secrets with unknown people
+        </label>
+      </div>
+
+      <!-- Q4 -->
+      <div class="question-block">
+        <p><strong>4.</strong> Which website is used for Aadhaar services?</p>
+        <label class="option-label">
+          <input type="radio" name="q4" value="uidai"> uidai.gov.in
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q4" value="random"> free-aadhaar-prize.com
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q4" value="games"> supergames.com
+        </label>
+      </div>
+
+      <!-- Q5 -->
+      <div class="question-block">
+        <p><strong>5.</strong> What should you NEVER share with anyone?</p>
+        <label class="option-label">
+          <input type="radio" name="q5" value="OTP"> OTP or UPI PIN
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q5" value="FavColor"> Favourite colour
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q5" value="School"> School name
+        </label>
+      </div>
+
+      <!-- Q6 -->
+      <div class="question-block">
+        <p><strong>6.</strong> Strong password should have:</p>
+        <label class="option-label">
+          <input type="radio" name="q6" value="mix"> Letters, numbers and symbols
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q6" value="onlyname"> Only your name
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q6" value="1234"> 1234
+        </label>
+      </div>
+
+      <!-- Q7 -->
+      <div class="question-block">
+        <p><strong>7.</strong> If a stranger calls and asks for your OTP, you should:</p>
+        <label class="option-label">
+          <input type="radio" name="q7" value="share"> Share it immediately
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q7" value="ignore"> Not share and inform parents/teacher
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q7" value="joke"> Send jokes
+        </label>
+      </div>
+
+      <!-- Q8 -->
+      <div class="question-block">
+        <p><strong>8.</strong> Which is the best person to ask if you are confused online?</p>
+        <label class="option-label">
+          <input type="radio" name="q8" value="parent"> Parent or teacher
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q8" value="stranger"> Random stranger online
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q8" value="noone"> No one, just guess
+        </label>
+      </div>
+
+      <!-- Q9 -->
+      <div class="question-block">
+        <p><strong>9.</strong> Digital payments are done using:</p>
+        <label class="option-label">
+          <input type="radio" name="q9" value="UPI"> UPI apps like PhonePe / Google Pay
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q9" value="Chalk"> Chalk and blackboard
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q9" value="Pen"> Only pen and paper
+        </label>
+      </div>
+
+      <!-- Q10 -->
+      <div class="question-block">
+        <p><strong>10.</strong> What is a good rule for screen time?</p>
+        <label class="option-label">
+          <input type="radio" name="q10" value="balanced"> Balance study, play and screen time
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q10" value="allnight"> Play games all night
+        </label>
+        <label class="option-label">
+          <input type="radio" name="q10" value="neverstudy"> Never study, only mobile
+        </label>
+      </div>
+
+      <div class="text-center mt-4">
+        <button type="button" class="btn btn-primary btn-lg" onclick="submitQuiz()">Submit Quiz</button>
+        <button type="button" class="btn btn-secondary btn-lg ml-2" onclick="resetQuiz()">Reset</button>
+        <div id="result-box"></div>
+      </div>
+
+    </form>
+  </div>
+
+  <div class="text-center my-3">
+    <a href="lessons.html" class="btn btn-dark btn-lg">⬅ Back to Lessons</a>
+  </div>
+
+</div>
+
+
+<footer class="bg-dark text-white text-center mt-4">
+  <div class="container">
+    <small>&copy; 2025 Digital Literacy Camp | Young Learners</small>
+  </div>
+</footer>
+
+
+<script>
+  const correctAnswers = {
+    q1: "CPU",
+    q2: "Keyboard",
+    q3: "Homework",
+    q4: "uidai",
+    q5: "OTP",
+    q6: "mix",
+    q7: "ignore",
+    q8: "parent",
+    q9: "UPI",
+    q10:"balanced"
+  };
+
+  function submitQuiz(){
+    let score = 0;
+    let total = 10;
+
+    for(const q in correctAnswers){
+      const selected = document.querySelector('input[name="'+q+'"]:checked');
+      if(selected && selected.value === correctAnswers[q]){
+        score++;
+      }
+    }
+
+    const resultBox = document.getElementById("result-box");
+    resultBox.innerText = "You scored " + score + " out of " + total + ".";
+
+    if(score === 10){
+      resultBox.innerText += " 🎉 Excellent!";
+    }else if(score >= 7){
+      resultBox.innerText += " 👍 Good job!";
+    }else{
+      resultBox.innerText += " 💡 Keep practicing!";
+    }
+  }
+
+  function resetQuiz(){
+    document.getElementById("quizForm").reset();
+    document.getElementById("result-box").innerText = "";
+  }
+</script>
+
+</body>
+</html>

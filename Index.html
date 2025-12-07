@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Digital Literacy Camp - Home</title>
+
+  <!-- Bootstrap CSS (for basic design) -->
+  <link
+    rel="stylesheet"
+    href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+  >
+
+  <style>
+    body {
+      background-color: #f5f7fb;
+      font-family: Arial, sans-serif;
+    }
+    .hero {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 60px 15px;
+    }
+    .hero h1 {
+      font-size: 2rem;
+      font-weight: bold;
+    }
+    .hero p {
+      font-size: 1rem;
+      margin-top: 10px;
+      margin-bottom: 20px;
+    }
+    .btn-rounded {
+      border-radius: 25px;
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+    .feature-card {
+      border-radius: 10px;
+      border: none;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.08);
+      transition: transform 0.2s;
+    }
+    .feature-card:hover {
+      transform: translateY(-3px);
+    }
+    .feature-card img {
+      height: 150px;
+      object-fit: cover;
+      border-top-left-radius: 10px;
+      border-top-right-radius: 10px;
+    }
+    .gallery-img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand font-weight-bold" href="index.html">
+      Digital Literacy Camp
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+        <li class="nav-item active">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link" href="lessons.html">Lessons</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="digital-payments.html">Digital Payments</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cyber-safety.html">Cyber Safety</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="govt-services.html">Govt Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="help.html">Help Center</a>
+        </li>
+
+
+      </ul>
+    </div>
+  </nav>
+
+  <!-- HERO (for 7th class kids) -->
+  <section class="hero">
+    <div class="container">
+      <h1>Hello young learners 👋</h1>
+      <p>Let’s learn computers, internet and mobile safely in a simple and fun way!</p>
+      <a href="lessons.html" class="btn btn-success btn-lg btn-rounded">Start Lessons</a>
+    </div>
+  </section>
+
+  <div class="container mt-4">
+    <!-- About section -->
+    <div class="row">
+      <div class="col-md-7">
+        <h2>What Is This Camp?</h2>
+        <p>This camp is for young students. Here you will learn:</p>
+        <ul>
+          <li>What is a computer and how to use it</li>
+          <li>How to search on the internet safely</li>
+          <li>How to use mobile without danger</li>
+          <li>How to protect yourself from online cheating</li>
+        </ul>
+      </div>
+      <div class="col-md-5">
+        <img
+          src="https://images.pexels.com/photos/4144096/pexels-photo-4144096.jpeg"
+          class="img-fluid rounded"
+          alt="Students learning"
+        >
+      </div>
+    </div>
+
+    <!-- Cards -->
+    <h3 class="mt-4 mb-3">Main Topics</h3>
+    <div class="row">
+      <div class="col-md-4 mb-3">
+        <div class="card feature-card">
+          <img src="https://images.pexels.com/photos/4143798/pexels-photo-4143798.jpeg" alt="Computer basics">
+          <div class="card-body">
+            <h5 class="card-title">Computer Basics</h5>
+            <p class="card-text">Learn parts of a computer and how to start and use it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card feature-card">
+          <img src="https://images.pexels.com/photos/4144100/pexels-photo-4144100.jpeg" alt="Internet">
+          <div class="card-body">
+            <h5 class="card-title">Internet & Learning</h5>
+            <p class="card-text">Use internet for studies and homework safely.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-3">
+        <div class="card feature-card">
+          <img src="https://images.pexels.com/photos/4144097/pexels-photo-4144097.jpeg" alt="Safety">
+          <div class="card-body">
+            <h5 class="card-title">Being Safe Online</h5>
+            <p class="card-text">Know what not to share and how to avoid bad links.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Gallery -->
+    <h3 class="mt-4 mb-2">Fun Learning Photos</h3>
+    <p class="text-muted">Later, you can replace these with real photos from your school.</p>
+    <div class="row">
+      <div class="col-md-4 mb-2">
+        <img
+          src="https://images.pexels.com/photos/4144095/pexels-photo-4144095.jpeg"
+          class="gallery-img"
+          alt="Lab"
+        >
+      </div>
+      <div class="col-md-4 mb-2">
+        <img
+          src="https://images.unsplash.com/photo-1588072432836-e10032774350?auto=format&fit=crop&w=600&q=80"
+          class="gallery-img"
+          alt="Teacher helping"
+        >
+      </div>
+      <div class="col-md-4 mb-2">
+        <img
+          src="https://images.pexels.com/photos/4145032/pexels-photo-4145032.jpeg"
+          class="gallery-img"
+          alt="Students learning"
+        >
+      </div>
+    </div>
+  </div>
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white text-center mt-4">
+    <div class="container">
+      <small>&copy; 2025 Digital Literacy Camp | For young learners</small>
+    </div>
+  </footer>
+
+</body>
+</html>

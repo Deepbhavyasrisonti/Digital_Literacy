@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Safety - Young Learners</title>
+
+  <link rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+  <style>
+    body{
+      background:#f3f7ff;
+      font-family:Arial, sans-serif;
+    }
+    .hero{
+      background:#673ab7;
+      color:white;
+      text-align:center;
+      padding:45px 15px;
+    }
+    .hero h1{
+      font-size:2rem;
+      font-weight:bold;
+    }
+    .hero p{
+      margin-top:8px;
+    }
+    .section-card{
+      background:white;
+      border-radius:12px;
+      padding:20px;
+      box-shadow:0 6px 18px rgba(0,0,0,.08);
+      margin-bottom:20px;
+    }
+    .emoji-big{
+      font-size:32px;
+      margin-right:6px;
+    }
+    .rule-good{
+      color:#2e7d32;
+    }
+    .rule-bad{
+      color:#c62828;
+    }
+    .question{
+      font-weight:bold;
+    }
+    .badge-click{
+      cursor:pointer;
+    }
+  </style>
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand font-weight-bold" href="index.html">
+    Digital Literacy Camp
+  </a>
+
+  <button class="navbar-toggler" type="button"
+          data-toggle="collapse" data-target="#navbarNav">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav ml-auto">
+
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="lessons.html">Lessons</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="digital-payments.html">Digital Payments</a>
+      </li>
+
+      <li class="nav-item active">
+        <a class="nav-link" href="cyber-safety.html">Cyber Safety</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="govt-services.html">Govt Services</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link" href="contact.html">Contact</a>
+      </li>
+
+    </ul>
+  </div>
+</nav>
+
+
+<!-- HERO -->
+<div class="hero">
+  <h1>Cyber Safety 🛡️</h1>
+  <p>Learn how to stay safe on mobile, internet and games!</p>
+</div>
+
+
+<div class="container mt-4">
+
+  <!-- What is cyber safety -->
+  <div class="section-card">
+    <h3><span class="emoji-big">💡</span>What is Cyber Safety?</h3>
+    <p>
+      Cyber safety means protecting yourself while using mobile, computer,
+      internet, games and social media.
+      We must be careful about what we see, click and share.
+    </p>
+  </div>
+
+  <!-- Good habits -->
+  <div class="section-card">
+    <h3><span class="emoji-big">✅</span>Good Online Habits</h3>
+    <ul>
+      <li class="rule-good">Use strong passwords (mix of letters, numbers, symbols).</li>
+      <li class="rule-good">Ask parents/teachers before installing new apps.</li>
+      <li class="rule-good">Log out from accounts in school or lab computers.</li>
+      <li class="rule-good">Tell a trusted adult if something online makes you uncomfortable.</li>
+    </ul>
+  </div>
+
+  <!-- Bad habits -->
+  <div class="section-card">
+    <h3><span class="emoji-big">⚠️</span>Things You Should NOT Do</h3>
+    <ul>
+      <li class="rule-bad">Never share passwords, OTP, UPI PIN with anyone.</li>
+      <li class="rule-bad">Don’t click unknown links or pop-ups saying “You won a prize!”.</li>
+      <li class="rule-bad">Don’t chat with strangers who ask for photos or personal details.</li>
+      <li class="rule-bad">Don’t post your school name, phone number, address publicly.</li>
+    </ul>
+  </div>
+
+  <!-- Strong password tips -->
+  <div class="section-card">
+    <h3><span class="emoji-big">🔐</span>How to Make a Strong Password?</h3>
+    <ul>
+      <li>Use at least 8 characters.</li>
+      <li>Use capital + small letters (A–Z, a–z).</li>
+      <li>Add numbers (0–9) and symbols (@, #, !).</li>
+      <li>Example style: <code>Sun@School27</code> (just an example, not to reuse).</li>
+    </ul>
+  </div>
+
+  <!-- Mini quiz (interactive by revealing answers) -->
+  <div class="section-card">
+    <h3><span class="emoji-big">🎯</span>Quick Quiz – Tap to Check Answer</h3>
+
+    <p class="question">
+      1. A stranger asks for your OTP on call. What will you do?
+      <span class="badge badge-info badge-click" onclick="showAnswer(1)">Show Answer</span>
+    </p>
+    <p id="ans1" style="display:none;">
+      ❌ Never share OTP. Cut the call and inform parents/teacher.
+    </p>
+
+    <p class="question mt-3">
+      2. Your friend sends a link saying “Free diamonds for game, click fast!”. What should you do?
+      <span class="badge badge-info badge-click" onclick="showAnswer(2)">Show Answer</span>
+    </p>
+    <p id="ans2" style="display:none;">
+      Do not click. It may be a scam or virus. Ask an adult first.
+    </p>
+
+    <p class="question mt-3">
+      3. Someone is sending bad messages in a group. What is a good action?
+      <span class="badge badge-info badge-click" onclick="showAnswer(3)">Show Answer</span>
+    </p>
+    <p id="ans3" style="display:none;">
+      Block/report the person and tell a teacher/parent. Don’t reply with anger.
+    </p>
+  </div>
+
+  <!-- Simple rules summary -->
+  <div class="section-card">
+    <h3><span class="emoji-big">📌</span>Remember 3 Golden Rules</h3>
+    <ol>
+      <li>Don’t share secrets (password, OTP, PIN).</li>
+      <li>Don’t talk or meet unknown people from internet.</li>
+      <li>Tell adults if something feels wrong online.</li>
+    </ol>
+  </div>
+
+  <!-- Back -->
+  <div class="text-center my-3">
+    <a href="lessons.html" class="btn btn-dark btn-lg">⬅ Back to Lessons</a>
+  </div>
+
+</div> <!-- container -->
+
+
+<!-- FOOTER -->
+<footer class="bg-dark text-white text-center mt-4">
+  <div class="container">
+    <small>&copy; 2025 Digital Literacy Camp | Young Learners</small>
+  </div>
+</footer>
+
+<!-- Small JS for quiz reveal -->
+<script>
+  function showAnswer(n){
+    const el = document.getElementById("ans" + n);
+    if (el.style.display === "none") {
+      el.style.display = "block";
+    } else {
+      el.style.display = "none";
+    }
+  }
+</script>
+
+</body>
+</html>
